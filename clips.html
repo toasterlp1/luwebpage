@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ff57b8" />
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script defer src="./assets/js/main.js"></script>
+
+  <title>Lu ★ Clips</title>
+</head>
+<body>
+  <div class="shell">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="logo">LU ★</div>
+        <div class="tag">y2k pink • glitter • scrapbook</div>
+      </div>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a class="navbtn" href="./index.html">Home</a>
+        <a class="navbtn" href="./about.html">About me</a>
+        <a class="navbtn" href="./games.html">Games</a>
+        <a class="navbtn" href="./clips.html">Clips</a>
+        <a class="navbtn" href="./socials.html">Socials</a>
+      </nav>
+    </div>
+  </header>
+
+
+    <main class="container">
+      <section class="window">
+        <div class="titlebar">
+          <div><strong>CLIPS.VAULT</strong> <span class="small">— mp4/webm direkt aus dem Repo</span></div>
+          <div class="dots" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        </div>
+        <div class="content">
+          <h2 class="h1">Clips</h2>
+          <p class="m0">
+            Lege deine Clips in <code>assets/clips/</code> ab (z.B. <code>my-clip-01.mp4</code>).
+            Dann fügst du unten einfach neue <code>&lt;video&gt;</code>-Blöcke ein.
+          </p>
+
+          <div class="card mt16">
+            <div class="card-h"><strong>So fügst du einen Clip ein</strong></div>
+            <div class="card-b">
+              <pre style="margin:0; white-space:pre-wrap; font-size:18px;">&lt;div class="media"&gt;
+  &lt;video controls preload="metadata"&gt;
+    &lt;source src="./assets/clips/DEIN-CLIP.mp4" type="video/mp4"&gt;
+    &lt;!-- Optional: WebM als Fallback --&gt;
+    &lt;source src="./assets/clips/DEIN-CLIP.webm" type="video/webm"&gt;
+  &lt;/video&gt;
+  &lt;div class="cap"&gt;Titel / Datum / Beschreibung&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+          </div>
+
+          <div class="card mt16">
+            <div class="card-h"><strong>Clip Grid (Beispiele)</strong></div>
+            <div class="card-b">
+              <div class="media-grid">
+                <div class="media">
+                  <!-- Ersetze die src mit einem echten Clip in assets/clips/ -->
+                  <video controls preload="metadata">
+                    <source src="" type="video/mp4">
+                  </video>
+                  <div class="cap">Hier kommt dein Clip hin (src eintragen)</div>
+                </div>
+                <div class="media">
+                  <video controls preload="metadata">
+                    <source src="" type="video/mp4">
+                  </video>
+                  <div class="cap">Noch ein Clip ✨</div>
+                </div>
+              </div>
+
+              <p class="small mt12 m0">
+                Hinweis: Sehr große Videos können GitHub langsamer machen. Wenn ein Clip riesig ist, lieber komprimieren.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+  <footer class="footer">
+    <div class="mini">© <span data-year></span> Lu • made with ✨ & pink pixels</div>
+  </footer>
+
+  </div>
+</body>
+</html>
